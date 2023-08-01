@@ -1,0 +1,110 @@
+/* Demo styles */
+body {
+  background: #db8d34;
+  font-family: "Sora", monospace;
+}
+
+.dialogue {
+  font-size: 1.5rem;
+  word-spacing: 0.2em;
+  margin: 0 auto;
+  background: #000000;
+  padding: 1em 2em;
+  border-top: 1vw solid #ad630e;
+  line-height: 1.5em;
+  color: #fff;
+  min-height: 30vh;
+  align-items: center;
+}
+
+.active {
+  background-color: black !important;
+  color: white !important;
+}
+#imgMe {
+  position: absolute;
+  top: -246px;
+  width: 200px;
+  z-index: -1;
+}
+
+#kodegoLink {
+  color: #ad630e;
+  font-weight: 900;
+}
+
+.continue {
+  font-size: 0.8rem;
+  color: #ad630e;
+}
+
+.visitorSelection {
+  text-decoration: none;
+  word-spacing: 0;
+  font-weight: 900;
+  color: #ad630e;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ad630e;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+.swiper {
+  width: 100%;
+  height: 40vh;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide {
+  width: 60%;
+}
+
+.card-body {
+  background: #db8d34;
+}
+.card {
+  border: 1px solid #ad630e;
+}
+
+.card-body a {
+  background-color: #ad630e;
+  border: none;
+}
+
+.card-body a:hover {
+  background-color: #000;
+}
